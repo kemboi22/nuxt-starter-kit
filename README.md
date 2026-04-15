@@ -2,6 +2,11 @@
 
 Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
+## Installtion 
+```bash
+pnpm create nuxt@latest --template=kemboi22/nuxt-starter-kit
+```
+
 ## Setup
 
 Make sure to install dependencies:
