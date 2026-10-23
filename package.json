@@ -1,13 +1,17 @@
 {
   "name": "nuxt-starter-kit",
-  "type": "module",
   "private": true,
+  "type": "module",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "fmt": "oxfmt",
+    "fmt:check": "oxfmt --check",
+    "lint": "oxlint",
+    "lint:fix": "oxlint --fix"
   },
   "dependencies": {
     "@hugeicons/core-free-icons": "^4.3.5",
@@ -37,6 +41,8 @@
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.3.3",
+    "oxfmt": "^0.74.0",
+    "oxlint": "^1.89.0",
     "tailwindcss": "^4.3.3"
   }
 }
