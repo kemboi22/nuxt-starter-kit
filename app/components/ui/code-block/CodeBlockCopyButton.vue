@@ -3,7 +3,7 @@ import type { PrimitiveProps } from 'reka-ui'
 
 import type { HTMLAttributes } from 'vue'
 import type { ButtonVariants } from '@/components/ui/button'
-import { Tick02Icon, Copy01Icon } from '@hugeicons/vue'
+import { CheckIcon, CopyIcon } from '@lucide/vue'
 import { useClipboard } from '@vueuse/core'
 import { cn } from 'cn'
 import { Button } from '@/components/ui/button'
@@ -37,8 +37,8 @@ const { copy, copied } = useClipboard({ copiedDuring: 2000, legacy: true })
     :class="cn('', props.class)"
     @click="copy(props.value)"
   >
-    <Tick02Icon v-if="copied" />
-    <Copy01Icon v-else />
+    <CheckIcon v-if="copied" />
+    <CopyIcon v-else />
   </Button>
   <span aria-live="polite" class="sr-only">{{ copied ? "Copied" : "" }}</span>
 </template>

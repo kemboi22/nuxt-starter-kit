@@ -2,7 +2,7 @@
 import type { NavigationMenuTriggerProps } from 'reka-ui'
 
 import type { HTMLAttributes } from 'vue'
-import { ArrowDown01Icon } from '@hugeicons/vue'
+import { ChevronDownIcon } from '@lucide/vue'
 import { reactiveOmit } from '@vueuse/core'
 import { cn } from 'cn'
 import {
@@ -25,6 +25,6 @@ const forwardedProps = useForwardProps(delegatedProps)
     :class="cn(navigationMenuTriggerStyle(), 'group', props.class)"
   >
     <slot />
-    <ArrowDown01Icon class="relative top-px ml-1 size-3 transition duration-300 group-data-open/navigation-menu-trigger:rotate-180 group-data-popup-open/navigation-menu-trigger:rotate-180" aria-hidden="true" />
+    <ChevronDownIcon class="relative top-px ml-1 size-3 transition duration-300 group-data-open/navigation-menu-trigger:rotate-180 group-data-popup-open/navigation-menu-trigger:rotate-180" aria-hidden="true" />
   </NavigationMenuTrigger>
 </template>

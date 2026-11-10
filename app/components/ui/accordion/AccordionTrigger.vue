@@ -2,7 +2,7 @@
 import type { AccordionTriggerProps } from 'reka-ui'
 
 import type { HTMLAttributes } from 'vue'
-import { ArrowDown01Icon, ArrowUp01Icon } from '@hugeicons/vue'
+import { ChevronDownIcon, ChevronUpIcon } from '@lucide/vue'
 import { reactiveOmit } from '@vueuse/core'
 import { cn } from 'cn'
 import {
@@ -29,8 +29,8 @@ const delegatedProps = reactiveOmit(props, 'class')
     >
       <slot />
       <slot name="icon">
-        <ArrowDown01Icon data-slot="accordion-trigger-icon" class="pointer-events-none shrink-0 group-aria-expanded/accordion-trigger:hidden" />
-        <ArrowUp01Icon data-slot="accordion-trigger-icon" class="pointer-events-none hidden shrink-0 group-aria-expanded/accordion-trigger:inline" />
+        <ChevronDownIcon data-slot="accordion-trigger-icon" class="pointer-events-none shrink-0 group-aria-expanded/accordion-trigger:hidden" />
+        <ChevronUpIcon data-slot="accordion-trigger-icon" class="pointer-events-none hidden shrink-0 group-aria-expanded/accordion-trigger:inline" />
       </slot>
     </AccordionTrigger>
   </AccordionHeader>

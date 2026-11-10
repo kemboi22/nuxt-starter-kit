@@ -2,7 +2,7 @@
 import type { DropdownMenuRadioItemEmits, DropdownMenuRadioItemProps } from 'reka-ui'
 
 import type { HTMLAttributes } from 'vue'
-import { Tick02Icon } from '@hugeicons/vue'
+import { CheckIcon } from '@lucide/vue'
 import { reactiveOmit } from '@vueuse/core'
 import { cn } from 'cn'
 import {
@@ -35,7 +35,7 @@ const forwarded = useForwardPropsEmits(delegatedProps, emits)
     >
       <DropdownMenuItemIndicator>
         <slot name="indicator-icon">
-          <Tick02Icon />
+          <CheckIcon />
         </slot>
       </DropdownMenuItemIndicator>
     </span>

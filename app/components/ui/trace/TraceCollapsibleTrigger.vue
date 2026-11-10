@@ -2,7 +2,7 @@
 import type { CollapsibleTriggerProps } from 'reka-ui'
 
 import type { HTMLAttributes } from 'vue'
-import { ArrowRight01Icon } from '@hugeicons/vue'
+import { ChevronRightIcon } from '@lucide/vue'
 import { reactiveOmit } from '@vueuse/core'
 import { cn } from 'cn'
 import { CollapsibleTrigger } from '@/components/ui/collapsible'
@@ -24,7 +24,7 @@ const delegatedProps = reactiveOmit(props, 'class')
   >
     <slot />
     <TraceIcon class="transition-transform group-aria-expanded/trace-collapsible-trigger:rotate-90">
-      <ArrowRight01Icon />
+      <ChevronRightIcon />
     </TraceIcon>
   </CollapsibleTrigger>
 </template>

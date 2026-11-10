@@ -2,7 +2,7 @@
 import type { WithClassAsProps } from './interface'
 
 import type { ButtonVariants } from '@/components/ui/button'
-import { ArrowRight01Icon } from '@hugeicons/vue'
+import { ChevronRightIcon } from '@lucide/vue'
 import { cn } from 'cn'
 import { Button } from '@/components/ui/button'
 import { useCarousel } from './useCarousel'
@@ -26,7 +26,7 @@ const { orientation, canScrollNext, scrollNext } = useCarousel()
     :class="cn(
       'rounded-full absolute touch-manipulation',
       orientation === 'horizontal'
-        ? 'top-1/2 -right-12 -translate-y-1/2'
+        ? 'inset-y-0 -right-12 my-auto'
         : '-bottom-12 left-1/2 -translate-x-1/2 rotate-90',
       props.class,
     )"
@@ -35,7 +35,7 @@ const { orientation, canScrollNext, scrollNext } = useCarousel()
     @click="scrollNext"
   >
     <slot>
-      <ArrowRight01Icon class="cn-rtl-flip" />
+      <ChevronRightIcon class="cn-rtl-flip" />
       <span class="sr-only">Next slide</span>
     </slot>
   </Button>

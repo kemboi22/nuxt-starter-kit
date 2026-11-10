@@ -2,7 +2,7 @@
 import type { MenubarRadioItemEmits, MenubarRadioItemProps } from 'reka-ui'
 
 import type { HTMLAttributes } from 'vue'
-import { Tick02Icon } from '@hugeicons/vue'
+import { CheckIcon } from '@lucide/vue'
 import { reactiveOmit } from '@vueuse/core'
 import { cn } from 'cn'
 import {
@@ -31,7 +31,7 @@ const forwarded = useForwardPropsEmits(delegatedProps, emits)
     <span class="left-1.5 size-4 [&_svg:not([class*=size-])]:size-4 pointer-events-none absolute flex items-center justify-center">
       <MenubarItemIndicator>
         <slot name="indicator-icon">
-          <Tick02Icon />
+          <CheckIcon />
         </slot>
       </MenubarItemIndicator>
     </span>

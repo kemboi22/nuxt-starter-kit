@@ -2,7 +2,7 @@
 import type { ComboboxInputEmits, ComboboxInputProps } from 'reka-ui'
 
 import type { HTMLAttributes } from 'vue'
-import { SearchIcon } from '@hugeicons/vue'
+import { SearchIcon } from '@lucide/vue'
 import { reactiveOmit } from '@vueuse/core'
 import { cn } from 'cn'
 import { ComboboxInput, useForwardPropsEmits } from 'reka-ui'
@@ -24,7 +24,7 @@ const forwarded = useForwardPropsEmits(delegatedProps, emits)
 </script>
 
 <template>
-  <InputGroup>
+  <InputGroup class="w-auto">
     <InputGroupAddon>
       <SearchIcon class="size-4 shrink-0 opacity-50" />
     </InputGroupAddon>

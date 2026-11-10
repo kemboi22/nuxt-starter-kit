@@ -2,7 +2,7 @@
 import type { ListboxItemEmits, ListboxItemProps } from 'reka-ui'
 
 import type { HTMLAttributes } from 'vue'
-import { Tick02Icon } from '@hugeicons/vue'
+import { CheckIcon } from '@lucide/vue'
 import { reactiveOmit, useCurrentElement } from '@vueuse/core'
 import { cn } from 'cn'
 import { ListboxItem, useForwardPropsEmits, useId } from 'reka-ui'
@@ -74,6 +74,6 @@ onUnmounted(() => {
     }"
   >
     <slot />
-    <Tick02Icon class="ml-auto opacity-0 group-has-data-[slot=command-shortcut]/command-item:hidden group-data-[checked=true]/command-item:opacity-100" />
+    <CheckIcon class="ml-auto opacity-0 group-has-data-[slot=command-shortcut]/command-item:hidden group-data-[checked=true]/command-item:opacity-100" />
   </ListboxItem>
 </template>

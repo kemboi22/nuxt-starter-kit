@@ -2,13 +2,13 @@
 import type { ToasterProps } from 'vue-sonner'
 
 import {
-  CheckmarkCircle01Icon,
-  InformationCircleIcon,
-  Loading03Icon,
-  CancelCircleIcon,
-  Alert02Icon,
-  Cancel01Icon,
-} from '@hugeicons/vue'
+  CircleCheckIcon,
+  InfoIcon,
+  Loader2Icon,
+  OctagonXIcon,
+  TriangleAlertIcon,
+  XIcon,
+} from '@lucide/vue'
 import { reactiveOmit } from '@vueuse/core'
 import { cn } from 'cn'
 import { Toaster as Sonner } from 'vue-sonner'
@@ -39,24 +39,24 @@ const delegatedProps = reactiveOmit(props, 'class', 'toastOptions')
     v-bind="delegatedProps"
   >
     <template #success-icon>
-      <CheckmarkCircle01Icon class="size-4" />
+      <CircleCheckIcon class="size-4" />
     </template>
     <template #info-icon>
-      <InformationCircleIcon class="size-4" />
+      <InfoIcon class="size-4" />
     </template>
     <template #warning-icon>
-      <Alert02Icon class="size-4" />
+      <TriangleAlertIcon class="size-4" />
     </template>
     <template #error-icon>
-      <CancelCircleIcon class="size-4" />
+      <OctagonXIcon class="size-4" />
     </template>
     <template #loading-icon>
       <div>
-        <Loading03Icon class="size-4 animate-spin" />
+        <Loader2Icon class="size-4 animate-spin" />
       </div>
     </template>
     <template #close-icon>
-      <Cancel01Icon class="size-4" />
+      <XIcon class="size-4" />
     </template>
   </Sonner>
 </template>
