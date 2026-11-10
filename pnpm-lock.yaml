@@ -8,12 +8,6 @@ importers:
 
   .:
     dependencies:
-      '@hugeicons/core-free-icons':
-        specifier: ^4.4.0
-        version: 4.4.0
-      '@hugeicons/vue':
-        specifier: ^1.0.8
-        version: 1.0.8(vue@3.5.45(typescript@5.9.3))
       '@lucide/vue':
         specifier: ^1.70.0
         version: 1.70.0(vue@3.5.45(typescript@5.9.3))
@@ -515,14 +509,6 @@ packages:
     engines: {node: '>=20'}
     peerDependencies:
       hono: ^4 || ^5.0.0-0
-
-  '@hugeicons/core-free-icons@4.4.0':
-    resolution: {integrity: sha512-7Mz8bmGoY6tZ6l3C2TXwNMLVSr0I8HPwjjFIERAuJFj3rWwLxdF2ZLkDqdrVuEE1dx5b/VXyIsP4WoSU6Q40KQ==}
-
-  '@hugeicons/vue@1.0.8':
-    resolution: {integrity: sha512-T1fNH9/+0QntvNsWJRpWj9AlSXpHkHPNdf35/UWcVWQpPzm2BbH1heW2pSIKRka6NoXSte2vzNRJmmriRPfxIQ==}
-    peerDependencies:
-      vue: ^2.6.0 || ^3.0.0
 
   '@humanfs/core@0.19.2':
     resolution: {integrity: sha512-UhXNm+CFMWcbChXywFwkmhqjs3PRCmcSa/hfBgLIb7oQ5HNb1wS0icWsGtSAUNgefHeI+eBrA8I1fxmbHsGdvA==}
@@ -5598,12 +5584,6 @@ snapshots:
   '@hono/node-server@2.1.6(hono@4.13.17)':
     dependencies:
       hono: 4.13.17
-
-  '@hugeicons/core-free-icons@4.4.0': {}
-
-  '@hugeicons/vue@1.0.8(vue@3.5.45(typescript@5.9.3))':
-    dependencies:
-      vue: 3.5.45(typescript@5.9.3)
 
   '@humanfs/core@0.19.2':
     dependencies:
